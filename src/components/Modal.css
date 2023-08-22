@@ -1,0 +1,15 @@
+.modal-des
+{
+    background-color: rgb(234, 234, 234);
+    text-align: center;
+    border-radius: 10px;
+    font-family: 'REM', sans-serif
+}
+.head-alert
+{
+border-bottom: 1px solid rgb(28, 27, 27);
+}
+.msg-alert
+{
+    font-size: 1.4em;
+}

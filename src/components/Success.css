@@ -1,0 +1,12 @@
+.success-div
+{
+    height: calc(100vh - 65px);
+margin: 0 auto;
+background-color: white;
+position: absolute;
+top:0
+}
+.success-div>p
+{
+    font-size: 4em;
+}

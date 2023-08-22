@@ -1,0 +1,295 @@
+.shop-navbar a
+{
+    text-decoration: none;
+    color: var(--orange);
+}
+.shop-navbar
+{
+    background-color:var(--blue);
+    color: var(--orange);
+    font-size: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    z-index: 4;
+    max-height: 65px;
+    border-bottom: 4px solid var(--orange);
+}
+.div-navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-nav-links
+{
+    font-size: 1.3em;
+    color: var(--orange);
+    list-style: none;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+.menu>li
+{
+    margin: 0 2%;
+    padding: 2%;
+}
+.menu>li:hover
+{
+border-top: 3px solid var(--orange);
+}
+
+.logo
+{
+    font-family: 'REM', sans-serif;
+    font-size: 2.6em;
+    font-weight: 900;
+}
+.logo-ps
+{
+    font-family: 'REM', sans-serif;
+    font-size: 2em;
+    font-weight: 900;
+    display: none;
+}
+.out-login
+{
+    background-color: transparent;
+    border: 2px solid var(--orange);
+    
+    color: var(--orange);
+}
+.orange-sign
+{
+    background-color: var(--orange);
+    color:var(--blue);
+}
+.cart-div
+{
+    position: relative;
+}
+.cart-count
+{
+    top:0;
+    background-color: rgb(255, 0, 68);
+    color: #ffffff;
+    border-radius: 100%;
+    position: absolute;
+    width: 25px;
+    height:25px;
+    text-align: center;
+}
+.cart-sign 
+{
+    border: none;
+    background-color: transparent;
+    color: var(--orange);
+    font-size: 2em;
+     font-family:Arial;
+  border-width:1px;
+  font-weight:bold;
+  border-radius: 6px;
+}
+.orange-sign,.out-login ,.btn-user
+{
+  font-size:15px;
+  font-family:Arial;
+  padding: 0.6em 1.1em;
+  border-width:1px;
+  font-weight:bold;
+  border-radius: 6px;
+}
+.btn-user
+{
+    background-color: transparent;
+    color: #0baff6;
+    border: none;
+    text-transform: capitalize;
+}
+.mobile-menu
+{
+    display: none;
+}
+.orange-sign:hover
+{
+    background-color: #0baff6;
+    color: var(--blue);
+}
+.out-login:hover
+{
+    background-color: #0baff6;
+    color: var(--blue);
+}
+.list-group
+{
+    position: absolute;
+    top: 56px;
+    width: 10%;
+    right: 1%;
+    box-shadow: 5px 5px 14px black;
+    cursor: pointer;
+}
+.list-group a
+{
+    color: black;
+}
+
+.list-group-item:hover
+{
+    background-color: rgb(211, 213, 215);
+}
+    .ani-log
+{
+    margin-right: 5px;
+    transform: rotate(0deg);
+    transition: transform 300ms ease-in-out;  
+}
+.ani-rot
+{
+    margin-right: 5px;
+    transform: rotate(180deg);   
+    transition: transform 300ms ease-in-out;  
+}
+.mobile-li-menu
+{
+    position: absolute;
+    top:45px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 2em;
+    background-color: var(--blue);
+}
+.mobile-li-menu>ul
+{
+    list-style: none;
+
+}
+.mobile-li-menu>ul>li
+{
+     border-bottom: 1px solid var(--orange);
+ width: 40%;
+ margin: 0 auto;
+}
+
+@media (max-width:1368px) and (min-width:768px)
+{
+    .shop-navbar
+    {
+        font-size: 80%;
+    }
+    .cart-count
+    {
+        width: 20px;
+        height: 20px;
+    }
+    .list-group
+    {
+        width: 20%;
+    }
+}
+@media (max-width:768px)and (min-width:350px)
+{
+    .shop-navbar
+    {
+        font-size: 75%;
+    }
+    .mobile-menu
+    {
+        display: block;
+    }
+    .mobile-menu>p
+    {
+        font-size: 1.3em;
+    }
+    .logo
+    {
+        font-size: 2em;
+    }
+    .menu>li
+    {
+        display: none;
+    }
+    .orange-sign,.out-login
+    {
+        font-size: 10px;
+        margin: 0;
+    }
+        .cart-count
+    {
+        width: 18px;
+        height: 18px;
+    }
+      .list-group
+    {
+        width: 40%;
+    }
+    .mobile-li-menu>ul>li
+    {
+        width: 70%;
+    }
+}
+@media (max-width:350px)
+{
+    .shop-navbar
+    {
+        font-size: 75%;
+    }
+    .div-navbar
+    {
+        justify-content: space-around;
+    }
+    .logo
+    {
+        display: none;
+    }
+    .mobile-menu
+    {
+        display: block;
+    }
+    .mobile-menu>p
+    {
+        font-size: 1.3em;
+    }
+    .logo
+    {
+        font-size: 2em;
+    }
+    .logo-ps
+    {
+        display: block;
+    }
+    .menu>li
+    {
+        display: none;
+    }
+    .orange-sign,.out-login
+    {
+        font-size: 10px;
+        margin: 0;
+        padding: 0.6em 0.4em;
+    }
+        .cart-count
+    {
+        width: 18px;
+        height: 18px;
+    }
+      .list-group
+    {
+        width: 40%;
+    }
+    .mobile-li-menu
+    {
+        top:40px
+    }
+      .mobile-li-menu>ul>li
+    {
+        width: 80%;
+    }
+    .list-group
+    {
+        font-size: 50%;
+    }
+
+}

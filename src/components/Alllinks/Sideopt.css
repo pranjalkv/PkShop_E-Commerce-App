@@ -1,0 +1,93 @@
+#side-op
+{
+    width: 20%;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    border-right: 2px solid gray;
+    display: flex;
+    font-size: 100%;
+    overflow-y: auto;
+    padding-top: 50px;
+}
+.opt-div
+{
+    width: 100%;
+    margin-top: 66px;
+}
+.closer
+{
+    display: none;
+}
+.filter
+{
+    display: none;
+}
+.price-btn
+{
+    border-radius: 16px;
+    background-color: transparent;
+    color: var(--blue);
+    border: 2px solid var(--orange);
+    font-size: 1.2em;
+}
+.price-btn:hover
+{
+    background-color: var(--orange);
+}
+.rating-sort,.price-sort
+{
+    margin: 0 auto;
+}
+.rating-sort
+{
+    font-size: 1.2em;
+}
+.opt-div .btn:active
+{
+    background-color: aqua;
+}
+@media (max-width:1368px) and (min-width:768px)
+{
+
+    #side-op
+{
+      font-size: 80%;
+}
+}
+@media (max-width:768px)
+{
+#side-op
+{
+     width:55%;
+    font-size: 70%;
+    justify-content: center;
+    z-index:3;
+    background-color: #fff;
+    padding-top: 50px;
+}
+.closer
+{
+    display: block;
+    color: var(--blue);
+    position: absolute;
+    font-size: 2em;
+    top:10%;
+    right:20px;
+    border: none;
+    background-color: transparent;
+}
+.filter
+{
+    display: block;
+    color: var(--blue);
+    position: fixed;
+    top:100px;
+    background-color: var(--orange);
+    font-size: 19px;
+    border-radius: 10px;
+    left: 2px;
+    padding: 0.4em 0.7em;
+    border: none
+}
+}

@@ -1,0 +1,85 @@
+#editor-sec
+{
+    margin-top: 70px;
+        font-family: 'REM', sans-serif;
+}
+.editor-form
+{
+    position: sticky;
+    top:65px;
+    left: 0;
+    z-index: 6;
+    background-color: white;
+}
+.editor-flex
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: auto;
+}
+.editor-all-items
+{
+    width: 25%;
+}
+.editor-image-div
+{
+        margin: 0 auto;
+    width: 80%;
+}
+.edit-img
+{
+    width: 100%;
+    height: 270px;
+    object-fit: contain;
+}
+.editor-text
+{
+
+    font-size: 1.1;
+}
+.editor-btn-delete,.editor-btn-edit
+{
+    position: absolute;
+    z-index: 2;
+}
+.editor-btn-edit
+{
+    bottom: 0;
+    left: 1px;
+}
+.editor-btn-delete
+{
+      bottom: 0;
+    right: 1px;
+}
+.editor-image-div
+{
+    position: relative;
+}
+.spin-div
+{
+    height: 100vh;
+    position: fixed;
+    z-index: 8;
+    top: 0;
+    left: 0;
+    background-color: #00000042;
+}
+@media (max-width:768px)
+{
+    .editor-flex
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+    .editor-all-items
+    {
+        width: 60%;
+    }
+    .editor-image-div
+    {
+        width: 100%;
+    }
+
+}

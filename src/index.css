@@ -1,0 +1,22 @@
+:root{
+  --orange: #49c8ff;
+  --blue: #242642;
+}
+*
+{
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+  outline: 0;
+}
+html
+{
+    height: 100%;
+}
+body
+{
+      position: relative;
+  font-family: 'PT Sans', sans-serif;
+  min-height: 85%;
+  padding-bottom: 120px;
+}

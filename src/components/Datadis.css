@@ -1,0 +1,54 @@
+
+.row
+{
+    margin:0 auto;
+}
+.card
+{
+    margin: 0 auto;
+    max-width: 385px;
+}
+
+.card-img-top
+{
+    height: 200px;
+    object-fit: contain;
+}
+.rating
+{
+    color:var(--blue);
+    text-shadow: 1px 1px 1px black;
+}
+.card-title
+{
+    color: var(--blue);
+}
+.card-text
+{
+    font-size: 1.4em;
+    font-weight: 700;
+    color: #164489;
+}
+.card-body .btn
+{
+    background-color: var(--orange);
+}
+.card-body .btn 
+{
+    background-color: #0baff6;
+}
+.onerror
+{
+   animation: 1.5s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
