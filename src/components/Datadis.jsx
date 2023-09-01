@@ -101,7 +101,6 @@ function Datadis({propApi})
         })
       }
       }
-    
     }
     return(
       <>

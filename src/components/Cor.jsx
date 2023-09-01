@@ -13,7 +13,7 @@ function Cor()
             <div className="header-div col-lg-6 col-md-12 d-flex flex-column justify-content-center
              align-items-center my-3">
               <p>
-                Get best products at lesser price
+                Get best products at best prices
               </p>
               <button className="btn btn-primary btn-lg" onClick={()=>naviAll("/all")}>Shop Now</button>
             </div>

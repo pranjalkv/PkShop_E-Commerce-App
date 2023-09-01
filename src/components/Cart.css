@@ -77,6 +77,8 @@
 }
 .total-fixed
 {
+    display: flex;
+    justify-content: space-around;
     background-color: #ffffff;
     position: fixed;
     width: 100%;
@@ -98,7 +100,7 @@
 {
     #cart-sec
     {
-        font-size: 80%;
+        font-size: 75%;
     }
     .img-cart
 {
@@ -107,5 +109,15 @@
 .cart-title
 {
     text-align: center;
+}
+.total-fixed
+{
+    text-align: center;
+    flex-direction: column;
+    height: 120px;
+}
+.div-btn-768
+{
+    order: 2;
 }
 }

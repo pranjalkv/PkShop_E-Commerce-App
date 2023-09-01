@@ -5,7 +5,7 @@ function Electronics({propApi})
     return(
       <section id="elec-sec">
         <Sideopt></Sideopt>
-         <div style={{marginLeft:"20%",marginTop:"65px"}}>
+         <div className="api-products">
         <Datadis propApi={propApi}></Datadis>
         </div>
         </section>

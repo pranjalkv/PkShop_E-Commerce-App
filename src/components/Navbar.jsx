@@ -28,6 +28,7 @@ function Navbar()
   const[openMenu,setOpenmenu]=useState(false)
   const allcart =useSelector(state=>state.nameCart)
   const tCart=allcart.reduce((s,x)=>s+x.count,0)
+  const [curr,setCurr]=useState("");
 
   const naviUl=useNavigate()
   const ulRef=useRef()
@@ -63,17 +64,17 @@ function Navbar()
      <>
 <nav className="shop-navbar d-flex justify-content-between align-items-center py-1" ref={ulRef}>
     <div className="div-navbar w-100">
-<div className="logo mx-2"><NavLink to="/">PkSHOP</NavLink></div>
-<div className="logo-ps mx-2"><NavLink to="/">PS</NavLink></div>
+<div className="logo mx-2" onClick={()=>setCurr("")}><NavLink to="/">PkSHOP</NavLink></div>
+<div className="logo-ps mx-2" onClick={()=>setCurr("")}><NavLink to="/">PS</NavLink></div>
   <ul className="shop-nav-links my-2">
     <div className="menu d-flex align-items-center">
-      <li>
+      <li className={curr=="all"?"actived":""}  onClick={()=>setCurr("all")}>
         <NavLink to="/all">ALL</NavLink>
       </li>
-      <li>
+      <li className={curr=="cloth"?"actived":""} onClick={()=>setCurr("cloth")}>
         <NavLink to="/cloth">CLOTHING</NavLink>
       </li> 
-      <li>
+      <li className={curr=="ele"?"actived":""}  onClick={()=>setCurr("ele")}>
         <NavLink to="/electronics">ELECTRONICS</NavLink>
       </li>
     </div>
@@ -105,10 +106,10 @@ function Navbar()
       {!openMenu ? <FaBars size="2em" onClick={()=>setOpenmenu(!openMenu)}/>:<FaTimes 
       size="2em" onClick={()=>setOpenmenu(!openMenu)}/>}
       {openMenu && <div className="mobile-li-menu">
-        <ul onClick={()=>setOpenmenu(false)}>
-          <li><NavLink to="/all">ALL</NavLink></li>
-          <li><NavLink to="/cloth">CLOTHING</NavLink></li>
-          <li><NavLink to="/electronics">ELECTRONICS</NavLink></li>
+        <ul onClick={()=>setOpenmenu(false)} className="my-1">
+          <li className={curr=="all"?"actived-mob":""}  onClick={()=>setCurr("all")}><NavLink to="/all">ALL</NavLink></li>
+          <li className={curr=="cloth"?"actived-mob":""}  onClick={()=>setCurr("cloth")}><NavLink to="/cloth">CLOTHING</NavLink></li>
+          <li  className={curr=="ele"?"actived-mob":""}  onClick={()=>setCurr("ele")}><NavLink to="/electronics">ELECTRONICS</NavLink></li>
         </ul>
       </div>}
     </div>

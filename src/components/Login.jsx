@@ -94,8 +94,12 @@ function Login({notLog})
            <button className="google-btn" onClick={handleGlog} disabled={disbtn}>
             <FcGoogle/> Continue with Google
           </button>
-        <p>Don't have an account <Link to="/signup">Signup</Link></p>      
-
+        <p>Don't have an account <Link to="/signup">Signup</Link></p>  
+        <hr />
+        <div style={{textAlign:"center"}}>
+        <p>TestID: guest@web3.com</p>   
+        <p>Passsword :welcomeallguest</p> 
+        </div>
     </form>
     </div>
     </section>

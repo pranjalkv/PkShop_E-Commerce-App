@@ -86,7 +86,7 @@
     background-color: var(--orange);
     font-size: 19px;
     border-radius: 10px;
-    left: 2px;
+    left: -5px;
     padding: 0.4em 0.7em;
     border: none
 }

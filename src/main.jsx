@@ -17,12 +17,10 @@ export const store=configureStore({
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    
+  <Provider store={store}>
     <BrowserRouter>
-    <Provider store={store}>
     <App />
-     </Provider>
     </BrowserRouter>
-   
+   </Provider>
   </React.StrictMode>,
 )

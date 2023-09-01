@@ -6,7 +6,7 @@ function Cloth({propApi})
     return(
         <section id="cloth-sec" >
         <Sideopt propApi={propApi}></Sideopt>
-         <div style={{marginLeft:"20%",marginTop:"65px"}}>
+         <div className="api-products">
         <Datadis propApi={propApi}></Datadis>
         </div>
         </section>

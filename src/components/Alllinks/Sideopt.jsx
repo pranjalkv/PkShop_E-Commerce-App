@@ -9,7 +9,7 @@ function Sideopt({propApi})
 {
     const currurl=window.location.pathname;
     const[btnactive ,setBtnactive]=useState(false);
-    const[openFilter,setOpenfilter]=useState(false)
+    const[openFilter,setOpenfilter]=useState(true)
     const[priceBtn ,setProicebtn]=useState("");
 
     function winsize()
@@ -28,7 +28,8 @@ function Sideopt({propApi})
     {
         window.addEventListener("resize",winsize)
         return()=>window.removeEventListener("resize",winsize)
-    },[openFilter])
+    },[])
+
     function abov0Click(e)
     {
         disSort(clearState())

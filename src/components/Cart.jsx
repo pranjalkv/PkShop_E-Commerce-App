@@ -195,7 +195,7 @@ function Cart()
                         <p className="cart-price text-end"><span>{item?.count} X</span> {item?.price}/-</p>
                         </div>
                         <p className="cart-price-total text-end">={roundItem(item.count*item.price)}/-</p>
-                        <div>
+                        <div className='text-center'>
                                 <button className="btn btn-view">
                             View Product
                         </button>
@@ -206,8 +206,8 @@ function Cart()
                 </div>)}
             </div>
             {mapData.length==0 && <h4 className="ifempty">No items Added yet</h4>}
-            {mapData.length!=0 &&<div className="d-flex justify-content-around total-fixed p-1">
-                <div>
+            {mapData.length!=0 &&<div className="total-fixed p-1">
+                <div className='div-btn-768'>
                     <button className="btn btn-danger m-2"  onClick={emptyCart}>Remove All</button>
                     <button className="btn btn-view " onClick={handlePay}>Checkout</button>
                 </div>

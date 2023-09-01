@@ -34,12 +34,12 @@
 {
     margin: 0 2%;
     padding: 2%;
+    color: var(--blue);
 }
-.menu>li:hover
+.actived
 {
-border-top: 3px solid var(--orange);
+    border-top: 3px solid var(--orange);
 }
-
 .logo
 {
     font-family: 'REM', sans-serif;
@@ -168,9 +168,13 @@ border-top: 3px solid var(--orange);
 }
 .mobile-li-menu>ul>li
 {
-     border-bottom: 1px solid var(--orange);
  width: 40%;
  margin: 0 auto;
+}
+.actived-mob
+{
+   border: 2px solid var(--orange);
+   border-radius: 5px;
 }
 
 @media (max-width:1368px) and (min-width:768px)

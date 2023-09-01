@@ -1,0 +1,14 @@
+.api-products
+
+    {
+        margin-left:20%;
+        margin-top:65px;
+    }
+
+@media (max-width:768px)
+{
+.api-products
+{
+    margin: 65px auto 10px auto;
+}
+}
